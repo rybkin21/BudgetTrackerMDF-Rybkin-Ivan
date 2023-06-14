@@ -12,6 +12,7 @@
 		B4F0E1492A3A220600CDBF42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0E1482A3A220600CDBF42 /* ViewController.swift */; };
 		B4F0E14E2A3A220700CDBF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F0E14D2A3A220700CDBF42 /* Assets.xcassets */; };
 		B4F0E1512A3A220700CDBF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F0E14F2A3A220700CDBF42 /* LaunchScreen.storyboard */; };
+		B4F0E1612A3A3A4000CDBF42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4F0E1602A3A3A4000CDBF42 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F0E1612A3A3A4000CDBF42 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,9 @@
 			dependencies = (
 			);
 			name = "BudgetTrackerMDF-Rybkin Ivan";
+			packageProductDependencies = (
+				B4F0E1602A3A3A4000CDBF42 /* SnapKit */,
+			);
 			productName = "BudgetTrackerMDF-Rybkin Ivan";
 			productReference = B4F0E1412A3A220600CDBF42 /* BudgetTrackerMDF-Rybkin Ivan.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +145,9 @@
 				Base,
 			);
 			mainGroup = B4F0E1382A3A220600CDBF42;
+			packageReferences = (
+				B4F0E15F2A3A3A4000CDBF42 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = B4F0E1422A3A220600CDBF42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4F0E15F2A3A3A4000CDBF42 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4F0E1602A3A3A4000CDBF42 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4F0E15F2A3A3A4000CDBF42 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4F0E1392A3A220600CDBF42 /* Project object */;
 }
